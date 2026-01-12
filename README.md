@@ -14,6 +14,8 @@ This repository attempts to answer that question with a straightforward [Claude 
 
 The user (philpax) has never used Common Lisp and did not have it installed. Claude Code was able to set up the entire project autonomously—researching the cl-glfw3 and cl-opengl APIs, creating the Nix environment, writing the code, and verifying it loads correctly—without any manual intervention or debugging assistance.
 
+You can read the [full transcript of the Claude Code session](https://gisthost.github.io/?7924519b32addbf794c17f4dc7106bc2/index.html) to see just how little effort was required on the user's part. The transcript was generated using [claude-code-transcripts](https://github.com/simonw/claude-code-transcripts) by Simon Willison.
+
 The prompt used was simply:
 
 > Let's build a classic "hello triangle" for OpenGL in Common Lisp without using SDL, only OpenGL and GLFW. Create a shell.nix with all of the required dependencies; I do not have a Common Lisp environment.
