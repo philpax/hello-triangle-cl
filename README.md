@@ -10,7 +10,11 @@ This repository was created in response to [a Hacker News comment by f1shy](http
 
 > I asked [LLMs] for a code in common lisp, that renders the "hello triangle" a la opengl, using the glfw bindings, no frameworks. None of the responses compiled. After five iterations providing error messages, none compiled either. [...] If you have a prompt that achieves it, let me know I will test it.
 
-This repository attempts to answer that question with a straightforward [Claude Code](https://claude.ai/code) run, using the prompt:
+This repository attempts to answer that question with a straightforward [Claude Code](https://claude.ai/code) run.
+
+The user (philpax) has never used Common Lisp and did not have it installed. Claude Code was able to set up the entire project autonomously—researching the cl-glfw3 and cl-opengl APIs, creating the Nix environment, writing the code, and verifying it loads correctly—without any manual intervention or debugging assistance.
+
+The prompt used was simply:
 
 > Let's build a classic "hello triangle" for OpenGL in Common Lisp without using SDL, only OpenGL and GLFW. Create a shell.nix with all of the required dependencies; I do not have a Common Lisp environment.
 
